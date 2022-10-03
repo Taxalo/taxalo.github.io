@@ -1,0 +1,66 @@
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.flex {
+    display: flex;
+}
+
+.gh-center {
+    align-items: center;
+}
+
+.gv-center {
+    justify-items: center;
+}
+
+.mb {
+    margin-bottom: 50px;
+}
+
+.mt {
+    margin-top: 50px;
+}
+
+.py {
+    padding: 1.25rem 0;
+}
+
+.px {
+    padding: 0 1rem;
+}
+
+.max-width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-offline {
+    color: var(--deadColor);
+}
+
+.m-auto {
+    margin: 0 auto;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --mainBgColor: #333333;
+    --secondBgColor: #2a2a2a;
+    --mainColor: #EDF4ED;
+    --highColor: #E8DDB5;
+    --deadColor: rgb(155, 154, 154);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--mainBgColor);
+    color: var(--mainColor);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+    padding: 0.25rem 2rem;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h4 {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.navbar .links {
+    margin-left: auto;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links li {
+    display: inline;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    transition: 0.2s background-color ease-in-out;
+}
+
+.links li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.links a {
+    color: var(--highColor);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.high-color {
+    color: var(--highColor);
+}
+
+.second-bg {
+    background-color: var(--secondBgColor);
+}
+
+table,
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+}
+
+a {
+    color: var(--highColor);
+}
+
+.img-border {
+    border-radius: 12px;
+    box-shadow: 0 0 3px #000;
+    margin: 0.5rem;
+}
