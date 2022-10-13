@@ -64,3 +64,48 @@
 .m-auto {
     margin: 0 auto;
 }
+
+.campos{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+}
+
+.campos .input-field {
+    background-color: rgba(200, 200, 200, 0.9);
+    transition: all 0.2s ease-in-out;
+    border-radius: 12px;
+}
+
+.input-field:focus {
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+div.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit button {
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 0px 4px 2px #000;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+}
+
+.submit button:hover {
+    filter: invert();
+}
+
