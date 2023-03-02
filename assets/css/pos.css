@@ -100,7 +100,7 @@ div.submit {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
-    box-shadow: 0px 0px 4px 2px #000;
+    box-shadow: 0 0 4px 2px #000;
     cursor: pointer;
     transition: 0.2s ease-in-out all;
 }
@@ -122,5 +122,11 @@ img, video {
 @media (max-width: 728px) {
     .grid-2 {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 512px) {
+    .links {
+        display: none;
     }
 }
