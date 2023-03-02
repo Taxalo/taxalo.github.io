@@ -4,94 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Fotos de Mapaches</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/pos.css" />
+    <link rel="stylesheet" href="../assets/css/main.css"/>
+    <link rel="stylesheet" href="../assets/css/pos.css"/>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
+<header>
+    <nav class="navbar">
 
-            <div class="logo">
-                <img width="50" height="50" src="../assets/images/mapache.png" alt="Logo">
-                <h4>Amor Mapache</h4>
+        <div class="logo">
+            <img width="50" height="50" src="../assets/images/mapache.png" alt="Logo">
+            <h4>Amor Mapache</h4>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="../index.html#home">HOME</a></li>
+                <li><a href="../index.html#info">INFO</a></li>
+                <li><a href="../index.html#historia">HISTORIA</a></li>
+                <li class="active"><a href="#">FOTOS</a></li>
+                <li><a href="bibliografia.html">BIBLIOGRAFÍA</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+<main class="max-width">
+    <section>
+        <div class="grid-3">
+
+            <div class="grid-item text-center">
+                <img src="../assets/images/raccoon_1.jpg" alt="Mapache_1" width="300" height="300" class="img-border">
             </div>
 
-            <div class="links">
-                <ul>
-                    <li><a href="../index.html#home">HOME</a></li>
-                    <li><a href="../index.html#info">INFO</a></li>
-                    <li><a href="../index.html#historia">HISTORIA</a></li>
-                    <li><a href="#">FOTOS</a></li>
-                    <li><a href="bibliografia.html">BIBLIOGRAFÍA</a></li>
-                </ul>
+            <div class="grid-item text-center">
+                <img src="../assets/images/raccoon_2.jpg" alt="Mapache_2" width="300" height="300" class="img-border">
             </div>
 
-        </nav>
-    </header>
-    <main class="max-width">
-        <section>
-            <div class="grid-3">
-
-                <div class="grid-item text-center">
-                    <img src="../assets/images/raccoon_1.jpg" alt="Mapache_1" width="300" height="300" class="img-border">
-                </div>
-    
-                <div class="grid-item text-center">
-                    <img src="../assets/images/raccoon_2.jpg" alt="Mapache_2" width="300" height="300" class="img-border">
-                </div>
-    
-                <div class="grid-item text-center">
-                    <img src="../assets/images/raccoon_3.png" alt="Mapache_3" width="300" height="300" class="img-border">
-                </div>
-    
-                <div class="grid-item text-center">
-                    <img src="../assets/images/raccoon_4.jpg" alt="Mapache_4" width="300" height="300" class="img-border">
-                </div>
-    
-                <div class="grid-item text-center">
-                    <img src="../assets/images/raccoon_5.jpg" alt="Mapache_5" width="300" height="300" class="img-border">
-                </div>
-    
-                <div class="grid-item text-center">
-                    <img src="../assets/images/raccoon_6.jpg" alt="Mapache_6" width="300" height="300" class="img-border">
-                </div>
-    
-            </div>
-        </section>
-        <section>
-
-            <div class="text-center">
-                <h1 class="high-color text-xl">Envíanos tu foto!</h1>
-                <p class="text-offline">Para aparecer en nuestra sección envíanos una foto</p>
+            <div class="grid-item text-center">
+                <img src="../assets/images/raccoon_3.png" alt="Mapache_3" width="300" height="300" class="img-border">
             </div>
 
-            <form>
-                <fieldset>
-                    <legend>Tu mascota</legend>
-                    <div class="campos">
-                        <label for="mascot-name">Nombre de tu mascota</label>
-                        <input class="input-field" type="text" name="mascot-name" id="mascot-name">
-    
-                        <label for="mascot-age">Edad de tu mascota</label>
-                        <input class="input-field" type="number" name="mascot-age" id="mascot-age">
-    
-                        <label for="foto">Foto de tu mascota</label>
-                        <input type="file" name="foto" id="foto">
-                    </div>
-                    <div class="submit">
-                        <button type="submit">Subir</button>
-                    </div>
-                </fieldset>
-            </form>
-            
-        </section>
-    </main>
-    <footer class="text-center">
+            <div class="grid-item text-center">
+                <img src="../assets/images/raccoon_4.jpg" alt="Mapache_4" width="300" height="300" class="img-border">
+            </div>
+
+            <div class="grid-item text-center">
+                <img src="../assets/images/raccoon_5.jpg" alt="Mapache_5" width="300" height="300" class="img-border">
+            </div>
+
+            <div class="grid-item text-center">
+                <img src="../assets/images/raccoon_6.jpg" alt="Mapache_6" width="300" height="300" class="img-border">
+            </div>
+
+        </div>
+    </section>
+    <section>
+
+        <div class="text-center">
+            <h1 class="high-color text-xl">Envíanos tu foto!</h1>
+            <p class="text-offline">Para aparecer en nuestra sección envíanos una foto</p>
+        </div>
+
+        <form onsubmit="completarFormulario()">
+            <fieldset>
+                <legend>Tu mascota</legend>
+                <div class="campos">
+                    <label for="pet-name">Nombre de tu mascota</label>
+                    <input class="input-field" type="text" name="pet-name" id="pet-name" required>
+
+                    <label for="pet-age">Edad de tu mascota</label>
+                    <input class="input-field" type="number" name="pet-age" id="pet-age">
+
+                    <label for="pet-food">Comida favorita de tu mascota</label>
+                    <input class="input-field" type="text" name="pet-age" id="pet-food">
+
+                    <label for="foto">Foto de tu mascota</label>
+                    <input type="file" name="foto" id="foto" required>
+                </div>
+                <div class="submit">
+                    <button type="submit">Subir</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </section>
+</main>
+<footer class="text-center">
         <pre>WE LOVE MAPACHES
 &hearts;
         </pre>
-    </footer>
+</footer>
+<script type="application/javascript">
+    const completarFormulario = () => alert("Se ha enviado correctamente el formulario");
+
+</script>
 </body>
 
 </html>

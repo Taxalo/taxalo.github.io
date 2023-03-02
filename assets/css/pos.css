@@ -118,14 +118,14 @@ img, video {
     }
 }
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
     .grid-2 {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 512px) {
-    .links {
+@media (max-width: 728px) {
+    .links li:not(:first-of-type):nth-of-type(-n+3), .links li.active { /* Selecciona los elementos 2 y 3 y el elemento activo */
         display: none;
     }
 }
