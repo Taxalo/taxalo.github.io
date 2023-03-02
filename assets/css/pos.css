@@ -65,7 +65,7 @@
     margin: 0 auto;
 }
 
-.campos{
+.campos {
     display: flex;
     flex-direction: column;
 }
@@ -109,3 +109,18 @@ div.submit {
     filter: invert();
 }
 
+img, video {
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 728px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
