@@ -73,7 +73,6 @@
 input {
     margin: 0.5rem 0;
     padding: 0.5rem;
-    outline: none;
     border: none;
 }
 
@@ -84,7 +83,7 @@ input {
 }
 
 .input-field:focus {
-    outline: none;
+    outline: #F9DB6D 2px solid;
     background-color: rgb(255, 255, 255);
 }
 
